@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme{
+    --bg-custom-green:#87c059;
+}
+@layer components{
+    .main-container-one{
+        @apply flex flex-col;
+        background-image: url('./assets/Rectangle 6.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: fit-content;
+        background-color:rgb(30, 30, 30) ;
+        height: 100vh;
+    }
+   
+    .landing-page-container{
+        @apply flex flex-col items-start justify-center gap-6 text-white ;
+        height: var(--percent-100);
+        padding: 18% 12% 3% 12%;
+       
+        >h1{
+            @apply text-6xl font-bold;
+            color: var(--bg-custom-green);
+        }
+        >h3{
+            @apply text-xl;
+            width: 25%;
+            color: #b7b7b7;
+        }
+        >a{
+            @apply bg-black px-4 py-2 rounded-md
+        }
+    }
+    .view-product{
+        @apply py-3 rounded-md;
+        background-color: var(--bg-custom-green); 
+    }
+}
+@utility h-75vh{
+    height:75vh;
+}
+@utility h-45vh{
+    height:45vh;
+}
+@utility h-55vh{
+    height:55vh;
+}
+
+@utility bg-products{
+    background-color:#d9d9d9;
+}
+@utility bg-custom-green{
+    background-color:#87c059;
+}
+@utility bg-custom-black{
+    background-color:#111111;
+}
+@utility custom-green{
+    color:#87c059;
+}
+@utility custom-black{
+    color:#111111;
+}
