@@ -1,16 +1,15 @@
 import {glasses,wave } from '../assets/asset'
 import Header from './Header'
-import Products from './Products'
 function Home(){
   return (
     <>
       {/* Header*/}
-      <Header />
+      <Header className='z-20'/>
 
       {/* Main */}
       <main>
 
-          <div className="main-container-one  h-screen relative">
+          <div className="main-container-one relative">
               <div className="landing-page-container">
                   {/*Heading*/}
                   <h1>EYE GLASSES</h1>
@@ -32,12 +31,12 @@ function Home(){
                 
 
               {/* Glasses Image   */}
-              <div className='absolute bottom-36 right-28 w-lg h-45vh'>
+              <div className='absolute top-44 right-52 w-lg h-55vh'>
                 <img src={glasses} alt="glasses" className='w-full h-full'/>
               </div>
 
               {/* Wave */}
-              <div className="absolute bottom-0 left-0 right-0 h-24">
+              <div className=" absolute bottom-0 left-0 right-0">
                   <img src={wave} alt="image" className='w-full h-full'/>
               </div>
           </div>

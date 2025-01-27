@@ -9,15 +9,15 @@
         background-image: url('./assets/Rectangle 6.png');
         background-size: cover;
         background-repeat: no-repeat;
-        height: fit-content;
         background-color:rgb(30, 30, 30) ;
-        height: 100vh;
+        background-position: center;
+        height: 120vh;
     }
    
     .landing-page-container{
         @apply flex flex-col items-start justify-center gap-6 text-white ;
         height: var(--percent-100);
-        padding: 18% 12% 3% 12%;
+        padding: 18% 12% 3% 18%;
        
         >h1{
             @apply text-6xl font-bold;
