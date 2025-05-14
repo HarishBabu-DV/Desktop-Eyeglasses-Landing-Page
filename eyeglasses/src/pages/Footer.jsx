@@ -40,7 +40,9 @@ const Footer = () => {
                
                     {
                         footerContent.social_media_icons.map((icon,index)=>
-                            <a href="" className='text-white text-xl' key={index}><FontAwesomeIcon icon={icon.icon} /></a>
+                            <a href="" className='text-white text-xl' key={index}>
+                                <FontAwesomeIcon icon={icon.icon} />
+                            </a>
                         )
                     }
                          

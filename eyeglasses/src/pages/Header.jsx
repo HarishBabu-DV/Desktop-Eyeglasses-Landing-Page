@@ -3,7 +3,7 @@ import {logo } from '../assets/asset'
 import { navLink } from '../assets/asset'
 
 const Header = () => {
-  const headerElement=document.querySelector('.headerElement')
+  // const headerElement=document.querySelector('.headerElement')
   const [isNavBarColor,setIsNavBarColor]=useState(false)
   
   window.addEventListener("scroll",()=>{
@@ -13,7 +13,6 @@ const Header = () => {
     else{
       setIsNavBarColor(false)
     }
-
   } )
  
 
